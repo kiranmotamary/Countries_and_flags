@@ -26,7 +26,7 @@ const CountriesCard = ()=>{
         >
         {countries.map((country)=>(
             <div
-            key={country}
+            key={country.abbr}
        style={{
         display:"flex",
         flexDirection:"column",
