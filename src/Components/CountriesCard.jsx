@@ -6,9 +6,8 @@ const CountriesCard = ()=>{
             const response = await fetch("https://xcountries-backend.azurewebsites.net/all");
             const jsonData = await response.json();
             setCountries(jsonData);
-        }catch(error)
-        {
-            console.error(`Error fetching data: ${error}`)
+        }catch(error){
+            console.error("Error fetching data:",error)
         }
     }
     
